@@ -1,0 +1,50 @@
+.navMenuBody {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+    padding-left: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+@media (min-width: 992px){
+    .menuList1 {
+        display: flex;
+        margin-right: 8px; 
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 1.25rem;
+    }
+    
+    .menuList2 {
+        display: flex;
+        font-size: 1.25rem;
+        font-weight: bold;
+        padding: 1.25rem;
+    }
+    
+    .menuLink {
+        margin-right: 30px; /* 링크 사이의 간격을 8px로 지정 */
+    }   
+
+    .hamburger {
+        display: none;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .menuList1 {
+        display: none;
+    }
+
+    .menuList2 {
+        display: none;
+    }
+
+    .hamburger {
+        margin-top: 0.8rem;
+        margin-right: 0.85rem;
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+}

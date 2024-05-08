@@ -1,0 +1,4 @@
+.mobileNavMenuBar {
+    height: 100vh;
+    width: calc(100vw * 2 / 3);
+}

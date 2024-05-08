@@ -1,0 +1,18 @@
+.homeBody {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.ContentAria {
+    display: flex;
+}
+
+.homeContent {
+    margin: 1rem;
+}
+
+.todayBox {
+    display: flex;
+    
+}

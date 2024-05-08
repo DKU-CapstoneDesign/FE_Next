@@ -1,0 +1,31 @@
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(231, 231, 231);
+}
+
+.myPageContentMenu {
+    display: flex;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+}
+
+.contentMenuItem {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.mypageContent {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 3rem;
+    padding-bottom: 2.2rem;
+}
+
+.pickedMenu {
+    border-bottom: 3px solid;
+    
+}

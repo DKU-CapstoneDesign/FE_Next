@@ -1,0 +1,8 @@
+.postCardFrame {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 10px;
+    background-color: rgb(204, 255, 217);
+    margin: 0.5rem;
+    padding: 1.5rem;
+}
