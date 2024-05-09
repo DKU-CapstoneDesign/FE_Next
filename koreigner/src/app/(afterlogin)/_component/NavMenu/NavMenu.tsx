@@ -17,35 +17,38 @@ export default function NavMenu() {
 
     return(
         <div className={styles.navMenuBody}>
-            <Link href="/home">
-                <Image
-                    src={logo}
-                    alt="Logo"
-                    width={300}
-                    height={150}
-                />
-            </Link>
-            <div className={styles.menuList1}>
-                <Link href="/board" className={styles.menuLink}>게시판</Link>
-                <Link href="/discover" className={styles.menuLink}>살펴보기</Link>
-                <Link href="/support" className={styles.menuLink}>문의사항</Link>    
+            <div className={styles.menuContent}>
+                <Link className={styles.logo} href="/home">
+                    <Image
+                        src={logo}
+                        alt="Logo"
+                        width={250}
+                        height={100}
+                    />
+                </Link>
+                <div className={styles.menuList1}>
+                    <Link href="/board" className={styles.menuLink}>게시판</Link>
+                    <Link href="/discover" className={styles.menuLink}>살펴보기</Link>
+                    <Link href="/support" className={styles.menuLink}>팀 소개</Link>    
+                </div>
+                <div className={styles.menuList2}>
+                    <Link href="/chat" className={styles.menuLink}>채팅</Link>
+                    <Link href="/mypage" className={styles.menuLink}>마이페이지</Link>
+                </div>
+                {!isMenuVisible && 
+                    <FaBars 
+                        onClick={() => handleClick()}
+                        className={styles.hamburger}  
+                    />
+                }
+                {isMenuVisible && 
+                    <MobileNavMenu 
+                        setIsMenuVisibility={setIsMenuVisibility}
+                        handleClick={handleClick}
+                    />
+                }
             </div>
-            <div className={styles.menuList2}>
-                <Link href="/chat" className={styles.menuLink}>채팅</Link>
-                <Link href="/mypage" className={styles.menuLink}>마이페이지</Link>
-            </div>
-            {!isMenuVisible && 
-                <FaBars 
-                    onClick={() => handleClick()}
-                    className={styles.hamburger}  
-                />
-            }
-            {isMenuVisible && 
-                <MobileNavMenu 
-                    setIsMenuVisibility={setIsMenuVisibility}
-                    handleClick={handleClick}
-                />
-            }
+            <div className={styles.line} />
         </div>
     )
 }

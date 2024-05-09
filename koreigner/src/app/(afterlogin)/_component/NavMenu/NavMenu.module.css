@@ -1,25 +1,43 @@
 .navMenuBody {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(253, 253, 253);
+    z-index: 100;
+}
+
+.menuContent {
     display: flex;
     justify-content: space-between;
-    margin-top: 1.25rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(240, 240, 240);
+}
+
+.logo {
+    padding-top: 0.4rem;
     padding-left: 1rem;
-    margin-bottom: 0.7rem;
 }
 
 @media (min-width: 992px){
     .menuList1 {
         display: flex;
         margin-right: 8px; 
-        font-size: 1.5rem;
+        font-size: 1.35rem;
         font-weight: bold;
-        padding: 1.25rem;
+        margin-top: 1rem;
     }
     
     .menuList2 {
         display: flex;
         font-size: 1.25rem;
         font-weight: bold;
-        padding: 1.25rem;
+        margin-top: 1.1rem;
     }
     
     .menuLink {
@@ -42,7 +60,7 @@
     }
 
     .hamburger {
-        margin-top: 0.8rem;
+        margin-top: 0.85rem;
         margin-right: 0.85rem;
         width: 2.25rem;
         height: 2.25rem;
