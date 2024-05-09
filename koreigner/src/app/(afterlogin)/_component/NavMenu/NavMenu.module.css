@@ -47,4 +47,8 @@
         width: 2.25rem;
         height: 2.25rem;
     }
+
+    .hamburger:hover {
+        color: rgb(103, 103, 103);
+    }
 }

@@ -1,13 +1,18 @@
+'use client';
+
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from '../../../../../public/svg/logo.svg';
 import styles from './NavMenu.module.css';
 import { FaBars } from "react-icons/fa6";
+import MobileNavMenu from "./MobileNavMenu";
 
 export default function NavMenu() {
-
-    function handleClick() {
-        console.log('a');
+    const [isMenuVisible, setIsMenuVisibility] = useState<boolean>(false);
+    
+    function handleClick(): void {
+        setIsMenuVisibility(!isMenuVisible);
     }
 
     return(
@@ -29,7 +34,18 @@ export default function NavMenu() {
                 <Link href="/chat" className={styles.menuLink}>채팅</Link>
                 <Link href="/mypage" className={styles.menuLink}>마이페이지</Link>
             </div>
-            <FaBars className={styles.hamburger}  />
+            {!isMenuVisible && 
+                <FaBars 
+                    onClick={() => handleClick()}
+                    className={styles.hamburger}  
+                />
+            }
+            {isMenuVisible && 
+                <MobileNavMenu 
+                    setIsMenuVisibility={setIsMenuVisibility}
+                    handleClick={handleClick}
+                />
+            }
         </div>
     )
 }
