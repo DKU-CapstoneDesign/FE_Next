@@ -3,7 +3,7 @@ import NavMenu from "../_component/NavMenu/NavMenu"
 export default function Board() {
     return (
         <div>
-            <NavMenu />
+            <NavMenu isBarVisible={false} />
             <div>
                 <div>
                     <p>게시판</p>

@@ -7,11 +7,12 @@ import HotPostList from "./_component/HotPostList/HotPostList";
 import AdsBox from "../_component/AdsBox/AdsBox";
 import FestivalAria from "./_component/FestivalContent/FestivalAria";
 import ChatbotButton from "../_component/ChatbotButton/ChatbotButton";
+import Footer from '../_component/Footer/Footer';
 
 export default function Home() {
   return (
     <div className={styles.homeBody}>
-      <NavMenu />
+      <NavMenu isBarVisible={false} />
       <div className={styles.homeContent}>
         <div>
           <HomeSlider />
@@ -27,6 +28,7 @@ export default function Home() {
         <FestivalAria />
       </div>
       <ChatbotButton />
+      <Footer />
     </div>
   );
 }
