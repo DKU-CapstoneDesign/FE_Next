@@ -7,8 +7,13 @@ import logo from '../../../../../public/svg/logo.svg';
 import styles from './NavMenu.module.css';
 import { FaBars } from "react-icons/fa6";
 import MobileNavMenu from "./MobileNavMenu";
+import ScrollProgressBar from "../ScrollProgressBar/ScrollProgressBar";
 
-export default function NavMenu() {
+interface NavMenuType {
+    isBarVisible: boolean;
+}
+
+export default function NavMenu({isBarVisible  = false} : NavMenuType) {
     const [isMenuVisible, setIsMenuVisibility] = useState<boolean>(false);
     
     function handleClick(): void {
@@ -49,6 +54,7 @@ export default function NavMenu() {
                 }
             </div>
             <div className={styles.line} />
+            {isBarVisible && <ScrollProgressBar />}
         </div>
     )
 }

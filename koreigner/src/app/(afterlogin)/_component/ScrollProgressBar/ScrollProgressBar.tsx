@@ -4,12 +4,11 @@ import ProgressBar from "@ramonak/react-progress-bar";
 import { useScroll } from "@/app/_hooks/useScroll";
 
 function ScrollProgressBar() {
-
   const scrollY = useScroll();
-  
+
   return (
     <ProgressBar
-      maxCompleted={100}
+      maxCompleted={window.innerHeight}
       completed={scrollY}
       className="wrapper"
       barContainerClassName="container"
