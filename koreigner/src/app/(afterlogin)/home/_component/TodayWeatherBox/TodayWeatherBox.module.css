@@ -1,0 +1,8 @@
+.weatherBox {
+    background-color: aliceblue;
+    width: 20rem;
+    height: 20rem;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-right: 1rem;
+}

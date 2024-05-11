@@ -1,0 +1,38 @@
+.chatInputAria {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.chatInput {
+    border-style: solid;
+    border-width: 0.125rem;
+    border-color: rgb(240, 240, 240);
+    border-radius: 8px;
+    margin-right: 0.35rem;
+    padding: 0.4rem;
+    color:rgb(108, 108, 108);
+    width: 90%;
+}
+
+.chatInput:focus {
+    outline-color: rgb(188, 188, 188);
+}
+
+.sendButton {
+    color:rgb(167, 167, 167);
+    background-color: rgb(251, 225, 254);
+    font-size: large;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.43rem;
+    padding-bottom: 0.43rem;
+    border-radius: 8px;
+    width: 10%;
+}
+
+.sendButton:active {
+    color:rgb(87, 87, 87);
+    background-color: rgb(249, 198, 255);
+}

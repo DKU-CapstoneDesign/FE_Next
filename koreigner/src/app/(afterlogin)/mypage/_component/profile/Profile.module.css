@@ -1,0 +1,87 @@
+.title {
+    font-size:xx-large;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.line {
+    width: 85%;
+    height: 1px;
+    background-color: rgb(231, 231, 231);
+}
+
+.contentTitle {
+    font-size:x-large;
+    font-weight: 600;
+    padding-left: 0.1rem;
+}
+
+.profileImage {
+    width: 10rem;
+    height: 10rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.buttonAria {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.button {
+    font-size: large;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 5px;
+    background-color: rgb(251, 251, 251);
+    border-color: rgb(158, 158, 158);
+    border-width: 1px;
+}
+
+.button:active {
+    background-color: rgb(237, 237, 237);
+}
+
+.input {
+    width: 15rem;
+    border-radius: 5px;
+    border-width: 1px;
+    padding-left: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-right: 1rem;
+    border-color: rgb(192, 192, 192);
+}
+
+.input:focus {
+    outline-color: rgb(188, 188, 188);
+}
+
+.inputBox {
+    padding-top: 0.5rem;
+    display: flex;
+}
+
+.lastButtonAria {
+    display: flex;
+    gap: 0.7rem;
+    justify-content: center;
+}
+
+.lastButton {
+    font-size: large;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 5px;
+    background-color: rgb(251, 251, 251);
+    border-color: rgb(158, 158, 158);
+    border-width: 1px;
+}
+
+.lastButton:active {
+    background-color: rgb(237, 237, 237);
+}

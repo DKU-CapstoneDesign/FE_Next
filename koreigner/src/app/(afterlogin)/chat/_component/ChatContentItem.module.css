@@ -1,0 +1,28 @@
+.content {
+    display: flex;
+    margin: 0.5rem;
+}
+
+.profileImage {
+    width: 5rem;
+    height: 5rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    margin-right: 0.6rem;
+}
+
+.chatContent {
+    margin-top: 0.8rem;
+    margin-right: 3rem;
+} 
+
+.nickname {
+    font-size: larger;
+    font-weight: 600;
+    color: rgb(49, 49, 49);
+}
+
+.message {
+    font-size: larger;
+    color: rgb(129, 129, 129);
+}

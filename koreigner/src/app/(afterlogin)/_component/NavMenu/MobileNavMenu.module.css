@@ -1,0 +1,57 @@
+.mobileNavMenuBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    height: 100%;
+    width: calc(100vw * 2 / 3);
+    background-color: rgb(255, 255, 255);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    transition: width 0.5s ease;
+    opacity: 0.97;
+    animation: smoothAppear 0.3s ease-in-out forwards;
+}
+
+@keyframes smoothAppear {
+    from {
+      opacity: 0;
+      transform: translateX(10%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+.xMark {
+    position:absolute;
+    right: 0;
+    margin: 1rem;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.xMark:hover {
+    color: rgb(103, 103, 103);
+}
+
+.menuButtonAria {
+    position: absolute;
+    top: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuButtonItem {
+    font-size:xx-large;
+    margin-top: 3rem;
+}
+
+.menuButtonItem:hover {
+    color: rgb(103, 103, 103);
+    font-size:2.1rem;
+}

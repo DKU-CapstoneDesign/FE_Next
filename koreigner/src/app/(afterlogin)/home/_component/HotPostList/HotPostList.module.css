@@ -1,0 +1,9 @@
+.title {
+    font-size: 2.8rem;
+}
+
+.line {
+    width: 100%;
+    height: 0.185rem;
+    background-color: rgb(241, 241, 241);
+}

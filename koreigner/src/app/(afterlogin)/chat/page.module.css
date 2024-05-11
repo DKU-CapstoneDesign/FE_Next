@@ -1,0 +1,59 @@
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(231, 231, 231);
+}
+
+.verticalLine {
+    
+    width: 1px;
+    height: 100%;
+    background-color: rgb(231, 231, 231);
+}
+
+.chatPageContent {
+    position: relative;
+    display: flex;
+    height: 100vh;
+}
+
+.chattingPage {
+    width: 100%;
+}
+
+.chattingFriendsList {
+    width: calc(100% * 1/3);
+    height: 100%;
+    margin-left: 0.3rem;
+}
+
+.chattingPartnerProfileItem {
+    display: flex;
+    padding: 1rem;
+}
+
+.chattingPartnerImage {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    margin-right: 0.6rem;
+}
+
+.chattingPartnerNickname {
+    font-size: larger;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.chattingAria {
+    display: flex;
+}
+
+.chattingInputAria {
+    position: fixed;
+    width: calc(100% * 2/3);
+    bottom: 0;
+}
+

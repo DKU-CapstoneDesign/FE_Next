@@ -1,0 +1,61 @@
+.discoverBody {
+    margin-top: 7rem;
+    margin-left: auto; /* 자동으로 왼쪽 여백을 최대한으로 설정하여 수평 정렬 */
+    margin-right: auto; /* 자동으로 오른쪽 여백을 최대한으로 설정하여 수평 정렬 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 수직 중앙 정렬 */
+    align-items: center; /* 수평 중앙 정렬 */
+    margin-top: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* 너비 100% 설정 */
+}
+
+.search {
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+.introText {
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.inputBox {
+    border-style: solid;
+    border-width: 0.123rem;
+    border-color: rgb(221, 221, 221);
+    border-radius: 8px;
+    margin-right: 0.5rem;
+    padding: 0.3rem;
+    color:rgb(108, 108, 108);
+    width: 33rem;
+}  
+
+.inputBox:focus {
+    outline-color: rgb(188, 188, 188);
+    outline-width: 0.123rem;
+    outline-style: solid;
+}
+
+.sendButton {
+    color:rgb(146, 146, 146);
+    background-color: rgb(249, 197, 255);
+    font-size: large;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.43rem;
+    padding-bottom: 0.43rem;
+    border-radius: 8px;
+    width: 8rem;
+}
+
+.sendButton:active {
+    color:rgb(87, 87, 87);
+    background-color: rgb(249, 198, 255);
+}

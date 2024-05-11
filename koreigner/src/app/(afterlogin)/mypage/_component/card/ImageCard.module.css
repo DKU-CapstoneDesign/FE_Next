@@ -1,0 +1,8 @@
+.imageCardFrame {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 10px;
+    background-color: rgb(180, 255, 255);
+    margin: 0.5rem;
+    padding: 1.5rem;
+}
