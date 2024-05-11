@@ -1,5 +1,5 @@
 import NavMenu from "../_component/NavMenu/NavMenu";
-import HomeSlider from "./_component/HomeSlider/HomeSlider";
+import HomeSlider from "../_component/ImageSlider/ImageSlider";
 import styles from './page.module.css'
 import TodayWeatherBox from "./_component/TodayWeatherBox/TodayWeatherBox";
 import TodayLuck from "./_component/TodayLuckBox/TodayLuckBox";

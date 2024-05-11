@@ -7,8 +7,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import Image from 'next/image';
-
-import styles from './HomeSlider.module.css';
+import styles from './ImageSlider.module.css';
 
 export default function HomeSlider() {
     return (

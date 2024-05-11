@@ -1,3 +1,9 @@
+.HomeSliderBody {
+    width: 90%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
 @media (min-width: 992px) {
     .HomeSliderBody {
         margin-left: 4rem;
