@@ -1,0 +1,24 @@
+.body {
+    display: flex;
+    gap: 1rem; 
+    padding-bottom: 1rem;
+}
+
+.btn {
+    font-size: x-large;
+    font-weight: 500;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.btn:hover {
+    color: rgb(94, 94, 94);
+}
+
+.line {
+    width: 5.1rem;
+    background-color: black;
+    height: 3px;
+}
