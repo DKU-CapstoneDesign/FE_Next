@@ -11,6 +11,20 @@
     margin-right: 0.6rem;
 }
 
+@media screen and (max-width: 992px) {
+    .chatContent {
+        display: none; 
+    }
+
+    .nickname {
+        display: none; 
+    }
+
+    .message {
+        display: none; 
+    }
+}
+
 .chatContent {
     margin-top: 0.8rem;
     margin-right: 3rem;
