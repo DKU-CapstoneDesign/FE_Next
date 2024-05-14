@@ -1,0 +1,26 @@
+.card {
+    position: relative;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 10px;
+    border-width: 0.05px;
+    border-color: rgb(232, 232, 232);
+    margin: 0.2rem;
+    padding: 0.8rem;
+}
+
+.title {
+    font-size: x-large;
+}
+
+.content {
+    font-size: large;
+}
+
+.heart {
+    position: absolute;
+    bottom: 0.9rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}

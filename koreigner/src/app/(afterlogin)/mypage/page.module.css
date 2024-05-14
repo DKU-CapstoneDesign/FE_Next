@@ -18,14 +18,13 @@
     font-weight: 600;
 }
 
-.mypageContent {
-    padding-left: 8rem;
-    padding-right: 8rem;
+.content {
+    padding-left: 4rem;
+    padding-right: 4rem;
     padding-top: 3rem;
     padding-bottom: 2.2rem;
 }
 
 .pickedMenu {
     border-bottom: 3px solid;
-    
 }

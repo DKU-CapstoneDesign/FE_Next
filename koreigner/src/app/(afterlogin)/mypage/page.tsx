@@ -17,54 +17,28 @@ export default function myPage() {
 
   return (
     <div>
-      <NavMenu />
+      <NavMenu isBarVisible={false} />
       <div className={styles.line} />
       <div className={styles.myPageContentMenu}>
-        <div>
-          <button 
-            onClick={() => handleClick('Profile')}
-            className={styles.contentMenuItem}
-          >
-            {content === 'Profile' ? 
-              <p className={styles.pickedMenu}>
-                내 프로필
-              </p> 
-              : 
-              '내 프로필'
-            }
-          </button> 
-        </div>
-        <div>
-          <button 
-            onClick={() => handleClick('Activity')}
-            className={styles.contentMenuItem}
-          >
-            {content === 'Activity' ? 
-              <p className={styles.pickedMenu}>
-                활동
-              </p> 
-              : 
-              '활동'
-            }
-          </button> 
-        </div>
-        <div>
-          <button 
-            onClick={() => handleClick('Like')}
-            className={styles.contentMenuItem}
-          >
-            {content === 'Like' ? 
-              <p className={styles.pickedMenu}>
-                좋아요
-              </p> 
-              : 
-              '좋아요'
-            }
-          </button>
-        </div>
+        {['Profile', 'Activity', 'Like'].map((item) => (
+          <div key={item}>
+            <button 
+              onClick={() => handleClick(item as ContentType)}
+              className={styles.contentMenuItem}
+            >
+              {content === item ? 
+                <p className={styles.pickedMenu}>
+                  {item === 'Profile' ? '내 프로필' : item === 'Activity' ? '활동' : '좋아요'}
+                </p> 
+                : 
+                item === 'Profile' ? '내 프로필' : item === 'Activity' ? '활동' : '좋아요'
+              }
+            </button> 
+          </div>
+        ))}
       </div>
       <div className={styles.line} />
-      <div className={styles.mypageContent}>
+      <div className={styles.content}>
         {content === 'Profile' && <Profile />}
         {content === 'Like' && <Like />}
         {content === 'Activity' && <Activity />}
