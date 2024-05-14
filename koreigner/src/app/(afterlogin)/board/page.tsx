@@ -1,22 +1,28 @@
 import NavMenu from "../_component/NavMenu/NavMenu"
+import CategoryBar from "./_component/CategoryBar/CategoryBar";
+import PostCard from "./_component/PostCard/PostCard";
+import styles from './page.module.css';
+import SearchBar from "./_component/SearchBar/SearchBar";
 
 export default function Board() {
     return (
-        <div>
-            <NavMenu />
-            <div>
+        <>
+            <NavMenu isBarVisible={false} />
+            <div className={styles.body}>
                 <div>
-                    <p>게시판</p>
-                    <button>더보기</button>
+                    <p className={styles.title}>게시판</p>
+                    <p>koreigner에서 이야기합시다!</p>
                 </div>
-                <div>
-                    글들
+                <br />
+                <CategoryBar />
+                <SearchBar />
+                <div className={styles.content}>
+                    <PostCard />
+                    <PostCard />
+                    <PostCard />
+                    <PostCard />
                 </div>
             </div>
-            <div>
-                <p>hot 게시판</p>
-                <div>글들</div>
-            </div>
-        </div>
+        </>
     )
 }

@@ -7,27 +7,31 @@ import ChatInput from "../_component/ChatInput/ChatInput";
 export default function Chat() {
     return(
         <div>
-            <NavMenu />
-            <div className={styles.line} />
-            <div className={styles.chatPageContent}>
-                <div className={styles.chattingFriendsList}>
+            <NavMenu isBarVisible={false} />
+            <div className={styles.body}>
+                <div className={styles.chattingList}>
+                    <ChatContentItem />
+                    <ChatContentItem />
+                    <ChatContentItem />
+                    <ChatContentItem />
                     <ChatContentItem />
                     <ChatContentItem />
                     <ChatContentItem />
                     <ChatContentItem />
                     <ChatContentItem />
                 </div>
-                <div className={styles.verticalLine} />
-                <div className={styles.chattingPage}>
-                    <div className={styles.chattingPartnerProfileItem}>
-                        <IoPersonCircleOutline className={styles.chattingPartnerImage} />
-                        <p className={styles.chattingPartnerNickname}> nick name</p>
+                <div className={styles.chatting}>
+                    <div className={styles.chatProfileBox}>
+                        <div className={styles.chatProfile}>
+                            <IoPersonCircleOutline className={styles.chatProfileImage} />
+                            <p className={styles.chatNickname}>nick name</p>
+                        </div>
+                        <div className={styles.line} />
                     </div>
-                    <div className={styles.line} />
-                    <div className={styles.chattingAria}>
+                    <div className={styles.chatWindow}>
                         {/*채팅하는 내용*/}
                     </div>
-                    <div className={styles.chattingInputAria}>
+                    <div className={styles.chatInput}>
                         <ChatInput />
                     </div>
                 </div>

@@ -6,7 +6,7 @@ import ContentSlider from "../_component/ContentSlider/ContentSlider";
 export default function Discover() {
     return (
         <>
-            <NavMenu />
+            <NavMenu isBarVisible />
             <div className={styles.discoverBody}>
                 <div>
                     <p className={styles.introText}>
