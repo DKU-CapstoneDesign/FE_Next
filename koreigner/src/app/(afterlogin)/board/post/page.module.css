@@ -3,8 +3,13 @@
     height: 100;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 18rem;
+    padding-right: 18rem;
+
+    @media (max-width: 992px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 .header {
@@ -79,19 +84,24 @@
 
 .commentHeader {
     display: flex;
-    gap: 0.3rem;
+    gap: 1rem;
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
 }
 
-.commentCount {
-    font-weight: 500;
-    color: rgb(88, 88, 88);
-    width: 100;
+.commentHeaderItem {
+    display: flex;
+    gap: 0.2rem;
 }
 
-.commentIcon {
-    width: 1.3rem;
-    height: 1.3rem;
-    margin-top: 0.2rem;
+.count {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(88, 88, 88);
+    margin-top: 0.05rem;
+}
+
+.icon {
+    width: 1.6rem;
+    height: 1.6rem;
 }
