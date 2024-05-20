@@ -1,12 +1,12 @@
 'use client';
 import styles from './page.module.css';
-import NavMenu from "../../_component/NavMenu/NavMenu"
-import Comment from '../_component/Comment/Comment';
+import NavMenu from "../../../_component/NavMenu/NavMenu"
+import Comment from '../../_component/Comment/Comment';
 import { IoPersonCircleOutline } from "react-icons/io5";
 import { FaRegCommentDots } from "react-icons/fa";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { IoIosHeart } from "react-icons/io";
-import ChatInput from '../../_component/ChatInput/ChatInput';
+import ChatInput from '../../../_component/ChatInput/ChatInput';
 import { useState } from 'react';
 
 export default function PostPage() {
