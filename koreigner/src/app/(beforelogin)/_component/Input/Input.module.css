@@ -14,8 +14,9 @@
 .input {
     border: none; 
     border-bottom: 0.123rem solid #000; 
-    width: 16rem;
+    width: 18rem;
     padding-left: 0.15rem;
+    font-size: 0.93rem;
 }
 
 .input:focus {
