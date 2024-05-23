@@ -6,6 +6,7 @@
     padding-top: 5rem;
     padding-bottom: 7rem;
     width: 100%;
+    max-width: 100%;
 }
 
 .logo {
@@ -46,22 +47,5 @@
     margin-bottom: 1rem;
 }
 
-.submit {
-    font-size: 1.3rem;
-    font-weight: 500;
-    border-radius: 10px;
-    border-color: #393939;
-    border-width: 0.125rem;
-    border-style: dashed;
-    padding-left: 1.3rem;
-    padding-right: 1.3rem;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-}
 
-.goTORegister {
-    
-}
 
