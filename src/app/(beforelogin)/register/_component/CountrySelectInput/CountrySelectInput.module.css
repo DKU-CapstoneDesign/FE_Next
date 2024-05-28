@@ -16,3 +16,8 @@
     width: 18rem;
     padding-left: 0.15rem;
 }
+
+.error {
+    font-size: 0.9rem;
+    color: rgb(198, 84, 84);
+}

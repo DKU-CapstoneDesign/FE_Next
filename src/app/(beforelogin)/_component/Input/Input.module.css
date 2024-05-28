@@ -1,7 +1,7 @@
 .inputForm {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
     align-items: flex-start;
 }
 
@@ -17,8 +17,15 @@
     width: 18rem;
     padding-left: 0.15rem;
     font-size: 0.93rem;
+    margin-bottom: 0.2rem;
 }
 
 .input:focus {
     outline: none;
+}
+
+.error {
+    font-size: 0.9rem;
+    color: rgb(198, 84, 84);
+    white-space: break-all;
 }

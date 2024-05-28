@@ -21,3 +21,8 @@
 .input:focus {
     outline: none;
 }
+
+.error {
+    font-size: 0.9rem;
+    color: rgb(198, 84, 84);
+}

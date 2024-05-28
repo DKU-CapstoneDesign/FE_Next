@@ -1,6 +1,9 @@
 "use client";
 
 import { useState, useMemo } from 'react';
+import * as z from "zod";
+import { RegisterSchema } from '@/schemas';
+import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm, Controller, SubmitHandler } from "react-hook-form"; 
 import countryList from 'react-select-country-list';
 import styles from './page.module.css';
@@ -23,9 +26,26 @@ type Inputs = {
 }
 
 export default function Register() {
-    const { control, handleSubmit, formState: { errors } } = useForm<Inputs>();
+    const defaultBirthDate = new Date('2000-01-01');
 
-    const [startDate, setStartDate] = useState<Inputs['birth']>(new Date());
+    const { 
+        control, 
+        handleSubmit, 
+        formState: { errors } 
+    } = useForm<z.infer<typeof RegisterSchema>>({
+        resolver: zodResolver(RegisterSchema),
+        defaultValues: {
+            email: '',
+            password: '',
+            checkPassword: '',
+            nickname: '',
+            birth: defaultBirthDate,
+            country: null,
+        },
+        mode: 'onChange',
+    });
+
+    const [startDate, setStartDate] = useState<Inputs['birth']>(defaultBirthDate);
     const [country, setCountry] = useState<Inputs['country']>(null);
     const countryLists = useMemo(() => countryList().getData(), []);
 
@@ -70,12 +90,15 @@ export default function Register() {
                     render={({ field }) => {
                         const { value, onChange } = field;
                         return (
-                            <Input
-                                type="email"
-                                label="Email"
-                                value={value}
-                                onChange={onChange}
-                            />
+                            <>
+                                <Input
+                                    type="email"
+                                    label="Email"
+                                    value={value}
+                                    error={errors.email?.message}
+                                    onChange={onChange} 
+                                />
+                            </>
                         )
                     }}
                 />
@@ -89,6 +112,7 @@ export default function Register() {
                                 type="password"
                                 label="Password"
                                 value={value}
+                                error={errors.password?.message}
                                 onChange={onChange}
                             />
                         )
@@ -104,6 +128,7 @@ export default function Register() {
                                 type="password"
                                 label="Check Password"
                                 value={value}
+                                error={errors.checkPassword?.message}
                                 onChange={onChange}
                             />
                         )
@@ -119,6 +144,7 @@ export default function Register() {
                                 type="text"
                                 label="Nickname"
                                 value={value}
+                                error={errors.nickname?.message}
                                 onChange={onChange}
                             />
                         )
@@ -133,6 +159,7 @@ export default function Register() {
                         return (
                             <BirthDateInput 
                                 selected={value}
+                                error={errors.birth?.message}
                                 onChange={(date) => {
                                     onChange(date);
                                     setStartDate(date);
@@ -151,6 +178,7 @@ export default function Register() {
                             <CountrySelectInput 
                                 selected={value}
                                 options={countryLists}
+                                error={errors.country?.message}
                                 onChange={(value) => {
                                     onChange(value)
                                     setCountry(value)
