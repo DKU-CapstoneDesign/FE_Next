@@ -4,10 +4,11 @@ type InputProps = {
     type: string;
     value: string;
     label: string;
+    error: string | undefined;
     onChange: (...event: any[]) => void;
 };
 
-export default function Input({ type, value, label, onChange }: InputProps) {
+export default function Input({ type, value, label, error, onChange }: InputProps) {
     return (
         <div className={style.inputForm}>
             <label className={style.label}>
@@ -19,6 +20,9 @@ export default function Input({ type, value, label, onChange }: InputProps) {
                 value={value} 
                 onChange={onChange}
             />
+            <p className={style.error}>
+                {error}
+            </p>
         </div>
     )
 }

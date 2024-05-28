@@ -6,10 +6,11 @@ import "react-datepicker/dist/react-datepicker.css";
 
 type InputProps = {
     selected: Date | null;
+    error: string | undefined;
     onChange: (date: Date | null) => void;
 }
 
-export default function BirthDateInput({ selected, onChange}: InputProps) { 
+export default function BirthDateInput({ selected, error, onChange}: InputProps) { 
     return (
         <div className={style.inputForm}>
             <label className={style.label}>
@@ -20,6 +21,9 @@ export default function BirthDateInput({ selected, onChange}: InputProps) {
                 selected={selected} 
                 onChange={onChange} 
             />
+            <p className={style.error}>
+                {error}
+            </p>
         </div>
     )
 }

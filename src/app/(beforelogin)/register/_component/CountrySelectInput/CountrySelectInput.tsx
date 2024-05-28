@@ -6,10 +6,11 @@ import Select from 'react-select';
 type InputProps = {
     selected: { label: string; value: string } | null;
     options: { label: string; value: string }[];
+    error: string | undefined;
     onChange: (country: { label: string; value: string } | null) => void;
 }
 
-export default function CountrySelectInput({ selected, options, onChange }: InputProps) {
+export default function CountrySelectInput({ selected, options, error, onChange }: InputProps) {
     return (
         <div className={style.inputForm}>
             <label className={style.label}>
@@ -22,6 +23,9 @@ export default function CountrySelectInput({ selected, options, onChange }: Inpu
                 onChange={onChange} 
                 placeholder="country"
             />
+            <p className={style.error}>
+                {error}
+            </p>
         </div>
     )
 }
